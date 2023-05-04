@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: no-repeat;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(to right, rgba(26, 235, 182, 255) 40%, rgba(255, 255, 255, 255) 20%);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.login {
+  width: 900px;
+  height: 550px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 80px, 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.logintext {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 280px;
+  margin-top: 110px;
+  font-weight: 900;
+}
+
+.help {
+  font-size: 13px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-weight: 900;
+}
+
+.forgot {
+  font-size: 13px;
+  position: absolute;
+  bottom: 150px;
+  right: 150px;
+  font-weight: 900;
+}
+
+
+
+label {
+  font-weight: bold;
+}
+
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 45%;
+  border-radius: 30px;
+  background-color: rgba(26, 235, 182, 255);
+  margin-top: 50px;
+}
+
+.login input[type="submit"]:hover {
+  background-color: rgba(41, 177, 143, 0.8);
+  cursor: pointer;
+}
+
+
+label[for="Email"] {
+  margin-right: 260px;
+  margin-bottom: 10px;
+}
+
+
+label[for="form-pass"] {
+  margin-right: 230px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+input[type="password"] {
+  width: 300px;
+  height: 40px;
+}
+
+
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+}
+
+
+.clean {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+
+.india {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: black;
+  font-weight: 700
+}
+
+img {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  width: 100px;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .login {
+    width: 100%;
+  }
+  .logintext {
+    font-size: 5vw;
+  
+  }
+  input[type="text"], input[type="password"] {
+    width: 90%;
+    font-size: 5vw;
+  }
+
+  .login {
+    padding: 20px;
+  }
+  
+  .logintext {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 4vw;
+  }
+  
+  label[for="Email"], label[for="form-pass"] {
+    margin-right: 100px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    margin-bottom: 20px;
+  }
+  
+  .login input[type="submit"] {
+    margin-top: 50px;
+    width: 100%;
+    margin-right: 50%;
+  margin-left: 10%;
+  }
+  
+  .help, .forgot {
+    display: none;
+  }
+  
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+  
+  .login {
+    font-size: 14px;
+    
+  }
+  
+  label {
+    font-size: 12px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    font-size: 12px;
+  }
+  
+  .clean{
+    font-size:medium;
+  }
+  
+  .india{
+    font-size:small;
+    margin-left: -20px;
+  }
+
+  input[type="password"] {
+  width: 100%;
+  margin-right: 50%;
+  margin-left: 10%;
+  }
+  
+  
+  
+  input[type="text"] {
+    width: 100%;
+    margin-right: 50%;
+    margin-left: 10%;
+  }
+
+}
